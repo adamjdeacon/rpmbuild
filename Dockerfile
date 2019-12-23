@@ -1,4 +1,4 @@
-ARG CENTOS_VERSION=7
+ARG CENTOS_VERSION=latest
 FROM centos:${CENTOS_VERSION}
 
 RUN yum -y update ; \
