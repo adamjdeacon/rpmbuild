@@ -1,4 +1,4 @@
-ARG CENTOS_VERSION=8
+ARG CENTOS_VERSION=7
 FROM centos:${CENTOS_VERSION}
 
 RUN source /etc/os-release ; if [[ ${VERSION_ID} -eq "8" ]]; then dnf -y install dnf-plugins-core && yum config-manager --set-enabled PowerTools ; fi
